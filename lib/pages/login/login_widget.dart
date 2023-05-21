@@ -39,7 +39,7 @@ class _LoginWidgetState extends State<LoginWidget> {
   Widget build(BuildContext context) {
     return Scaffold(
       key: scaffoldKey,
-      backgroundColor: FlutterFlowTheme.of(context).lineColor,
+      backgroundColor: FlutterFlowTheme.of(context).alternate,
       body: Form(
         key: _model.formKey,
         autovalidateMode: AutovalidateMode.always,
@@ -253,7 +253,7 @@ class _LoginWidgetState extends State<LoginWidget> {
                                           .override(
                                             fontFamily: 'Outfit',
                                             color: FlutterFlowTheme.of(context)
-                                                .darkBG,
+                                                .secondaryText,
                                           ),
                                     ),
                                   ),

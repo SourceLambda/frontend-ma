@@ -93,33 +93,36 @@ class _SplashScreenWidgetState extends State<SplashScreenWidget>
                   mainAxisAlignment: MainAxisAlignment.center,
                   crossAxisAlignment: CrossAxisAlignment.center,
                   children: [
-                    Column(
-                      mainAxisSize: MainAxisSize.max,
-                      children: [
-                        SvgPicture.asset(
-                          'assets/images/logo_circle.svg',
-                          width: 203.0,
-                          height: 249.0,
-                          fit: BoxFit.fitHeight,
-                        ),
-                        Container(
-                          width: MediaQuery.of(context).size.width * 0.9,
-                          height: 50.0,
-                          decoration: BoxDecoration(
-                            color: FlutterFlowTheme.of(context).primaryBlack,
+                    Align(
+                      alignment: AlignmentDirectional(0.0, 0.0),
+                      child: Column(
+                        mainAxisSize: MainAxisSize.max,
+                        mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                        children: [
+                          SvgPicture.asset(
+                            'assets/images/logo_circle.svg',
+                            width: 200.0,
+                            fit: BoxFit.fitHeight,
                           ),
-                          child: AutoSizeText(
-                            'Welcome!',
-                            textAlign: TextAlign.center,
-                            style: FlutterFlowTheme.of(context)
-                                .titleMedium
-                                .override(
-                                  fontFamily: 'Outfit',
-                                  fontSize: 40.0,
-                                ),
+                          Container(
+                            width: MediaQuery.of(context).size.width * 0.9,
+                            height: 50.0,
+                            decoration: BoxDecoration(
+                              color: FlutterFlowTheme.of(context).primaryBlack,
+                            ),
+                            child: AutoSizeText(
+                              'Welcome!',
+                              textAlign: TextAlign.center,
+                              style: FlutterFlowTheme.of(context)
+                                  .titleMedium
+                                  .override(
+                                    fontFamily: 'Outfit',
+                                    fontSize: 40.0,
+                                  ),
+                            ),
                           ),
-                        ),
-                      ],
+                        ],
+                      ),
                     ),
                   ],
                 ),
@@ -136,6 +139,7 @@ class _SplashScreenWidgetState extends State<SplashScreenWidget>
                             EdgeInsetsDirectional.fromSTEB(0.0, 20.0, 0.0, 0.0),
                         child: Column(
                           mainAxisSize: MainAxisSize.max,
+                          mainAxisAlignment: MainAxisAlignment.start,
                           children: [
                             Padding(
                               padding: EdgeInsetsDirectional.fromSTEB(

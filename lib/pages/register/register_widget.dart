@@ -41,7 +41,7 @@ class _RegisterWidgetState extends State<RegisterWidget> {
   Widget build(BuildContext context) {
     return Scaffold(
       key: scaffoldKey,
-      backgroundColor: FlutterFlowTheme.of(context).lineColor,
+      backgroundColor: FlutterFlowTheme.of(context).alternate,
       body: SingleChildScrollView(
         child: Column(
           mainAxisSize: MainAxisSize.max,
@@ -358,7 +358,8 @@ class _RegisterWidgetState extends State<RegisterWidget> {
                                   .bodyMedium
                                   .override(
                                     fontFamily: 'Outfit',
-                                    color: FlutterFlowTheme.of(context).darkBG,
+                                    color: FlutterFlowTheme.of(context)
+                                        .secondaryText,
                                   ),
                             ),
                           ),

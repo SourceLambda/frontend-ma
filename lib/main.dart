@@ -50,7 +50,7 @@ class _MyAppState extends State<MyApp> {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      title: 'SourceLambda Login',
+      title: 'SourceLambdaMobileApp',
       localizationsDelegates: [
         FFLocalizationsDelegate(),
         GlobalMaterialLocalizations.delegate,
@@ -67,12 +67,13 @@ class _MyAppState extends State<MyApp> {
       home: displaySplashImage
           ? Builder(
               builder: (context) => Container(
-                color: Colors.transparent,
+                color: Colors.black,
                 child: Center(
                   child: Image.asset(
                     'assets/images/logo_circle.png',
-                    width: MediaQuery.of(context).size.width * 1.0,
-                    fit: BoxFit.fitWidth,
+                    width: MediaQuery.of(context).size.width * 0.9,
+                    height: double.infinity,
+                    fit: BoxFit.contain,
                   ),
                 ),
               ),
