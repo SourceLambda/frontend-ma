@@ -70,7 +70,7 @@ class _MyAppState extends State<MyApp> {
                 color: Colors.transparent,
                 child: Center(
                   child: Image.asset(
-                    'assets/images/todo_0.0_Splash@3x.png',
+                    'assets/images/logo_circle.png',
                     width: MediaQuery.of(context).size.width * 1.0,
                     fit: BoxFit.fitWidth,
                   ),
