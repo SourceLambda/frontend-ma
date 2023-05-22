@@ -54,6 +54,7 @@ dependencies:
   url_launcher_platform_interface: 2.1.2
   graphql_flutter: ^5.1.2
   dot_navigation_bar: ^1.0.1+4
+  material_text_fields: ^1.0.3
 
 
 

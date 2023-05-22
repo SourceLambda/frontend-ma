@@ -1,5 +1,6 @@
 import 'package:dot_navigation_bar/dot_navigation_bar.dart';
 import 'package:flutter/material.dart';
+import 'package:source_lambda_mobile_app/pages/home/home_pages/browser.dart';
 import 'package:source_lambda_mobile_app/pages/home/home_pages/empty.dart';
 import 'package:source_lambda_mobile_app/pages/home/home_pages/marketplace.dart';
 
@@ -10,7 +11,7 @@ class HomeScaffold extends StatefulWidget {
 
 class _HomeScaffoldState extends State<HomeScaffold> {
   late int _currentIndex;
-  final pages = [MarketPlace(), Empty(), Empty()];
+  final pages = [MarketPlace(), Browser(), Empty()];
 
   void changePage(int index) {
     setState(() {
