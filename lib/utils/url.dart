@@ -1,1 +1,1 @@
-const String endpointUrl = "https://9683-186-81-229-30.ngrok-free.app/graphql";
+const String endpointUrl = 'http://192.168.5.106:5000/graphql';
