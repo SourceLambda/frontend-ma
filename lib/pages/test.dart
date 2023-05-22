@@ -36,8 +36,8 @@ class _TestState extends State<Test> {
       body: Container(
         padding: EdgeInsets.only(top: 50),
         child: Column(
-          children: [Text("Posts"), GetAllPosts()],
-        ),
+            //children: [Text("Posts"), GetAllPosts()],
+            ),
       ),
     );
   }

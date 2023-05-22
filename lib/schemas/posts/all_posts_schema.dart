@@ -3,7 +3,11 @@ class AllPostsSchema {
     query{
       allPosts{
         __typename
-        Title
+        Title,
+        Image,
+        Price,
+        Sum_ratings,
+        Num_ratings
       }
     }
     """;

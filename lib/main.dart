@@ -3,6 +3,7 @@ import 'package:flutter/material.dart';
 
 import 'package:flutter_localizations/flutter_localizations.dart';
 import 'package:graphql_flutter/graphql_flutter.dart';
+import 'package:source_lambda_mobile_app/pages/home/home.dart';
 import 'package:source_lambda_mobile_app/pages/test.dart';
 import 'package:source_lambda_mobile_app/utils/endpoint.dart';
 import 'flutter_flow/flutter_flow_theme.dart';
@@ -85,7 +86,7 @@ class _MyAppState extends State<MyApp> {
                   ),
                 ),
               )
-            : Test(),
+            : HomeScaffold(),
       ),
     );
   }
