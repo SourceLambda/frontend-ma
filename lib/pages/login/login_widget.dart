@@ -221,7 +221,7 @@ class _LoginWidgetState extends State<LoginWidget> {
                                             {
                                               Fluttertoast.showToast(
                                                   msg:
-                                                      "Login failed becasue of ${data['errors']}")
+                                                      "Incorrect username or password, please try again ")
                                             }
                                           else
                                             {print(data)}
