@@ -71,10 +71,10 @@ class _MiniPostState extends State<MiniPost> {
             height: widget.width / 3 + randomHeigh,
             width: widget.width - widget.width / 5,
             //TODO: repace with real Image
-            //child: Image(image: NetworkImage(widget.image)),
-            child: Image(
+            child: Image(image: NetworkImage(widget.image)),
+            /*child: Image(
                 image: NetworkImage(
-                    'https://firebasestorage.googleapis.com/v0/b/buku-14.appspot.com/o/261987_ys8mqf.png?alt=media&token=aead9c3b-9344-44f7-a487-fe76725eca90')),
+                    'https://firebasestorage.googleapis.com/v0/b/buku-14.appspot.com/o/261987_ys8mqf.png?alt=media&token=aead9c3b-9344-44f7-a487-fe76725eca90')),*/
           ),
           Spacer(),
           Column(

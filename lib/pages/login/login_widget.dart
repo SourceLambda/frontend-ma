@@ -1,4 +1,5 @@
 import 'package:graphql_flutter/graphql_flutter.dart';
+import 'package:source_lambda_mobile_app/pages/home/home.dart';
 import 'package:source_lambda_mobile_app/schemas/posts/login_schema.dart';
 import 'package:source_lambda_mobile_app/utils/url.dart';
 
@@ -224,7 +225,12 @@ class _LoginWidgetState extends State<LoginWidget> {
                                                       "Incorrect username or password, please try again ")
                                             }
                                           else
-                                            {print(data)}
+                                            {
+                                              Navigator.of(context).push(
+                                                  MaterialPageRoute(
+                                                      builder: (context) =>
+                                                          HomeScaffold()))
+                                            }
                                         }),
                                 builder: (runMutation, mutationResult) {
                                   return FFButtonWidget(
