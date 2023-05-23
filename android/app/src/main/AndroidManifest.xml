@@ -5,7 +5,7 @@
 
 
     <application
-        android:label="SourceLambda Login"
+        android:label="SourceLambdaMobileApp"
         tools:replace="android:label"
         android:icon="@mipmap/ic_launcher"
         android:requestLegacyExternalStorage="true">
