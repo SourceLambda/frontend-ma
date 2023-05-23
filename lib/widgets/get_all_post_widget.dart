@@ -15,7 +15,11 @@ class _GetAllPostsState extends State<GetAllPosts> {
   @override
   Widget build(BuildContext context) {
     return Query(
-        options: QueryOptions(document: gql(AllPostsSchema.allPosts)),
+        options: QueryOptions(
+            document: gql(AllPostsSchema.allPosts),
+            fetchPolicy: FetchPolicy.noCache,
+            cacheRereadPolicy: CacheRereadPolicy.ignoreAll,
+            optimisticResult: true),
         builder: (QueryResult result,
             {VoidCallback? refetch, FetchMore? fetchMore}) {
           if (result.hasException) {
